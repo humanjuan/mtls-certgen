@@ -1,0 +1,9 @@
+Logger Version: 1.6.1 SourceFile: mTLS.go Hash: I/gq62U1svYko+Ax/VZHyM96LxYJy/GFeH4vlji259o=
+May 28, 2025 22:21:08.027932 -04 [INFO] Starting certificate generation
+May 28, 2025 22:21:08.360162 -04 [INFO] Written to ./certificates/ca/ca-cert.pem
+May 28, 2025 22:21:08.361045 -04 [INFO] Written to ./certificates/ca/ca-key.pem
+May 28, 2025 22:21:08.516648 -04 [INFO] Written to ./certificates/server/server-cert.pem
+May 28, 2025 22:21:08.517601 -04 [INFO] Written to ./certificates/server/server-key.pem
+May 28, 2025 22:21:08.714254 -04 [INFO] Written to ./certificates/client/client-cert.pem
+May 28, 2025 22:21:08.775247 -04 [INFO] Written to ./certificates/client/client-key.pem
+May 28, 2025 22:21:08.775337 -04 [INFO] certificate has been successfully generated in ./certificates

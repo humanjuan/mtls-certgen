@@ -7,3 +7,66 @@ May 28, 2025 22:21:08.517601 -04 [INFO] Written to ./certificates/server/server-
 May 28, 2025 22:21:08.714254 -04 [INFO] Written to ./certificates/client/client-cert.pem
 May 28, 2025 22:21:08.775247 -04 [INFO] Written to ./certificates/client/client-key.pem
 May 28, 2025 22:21:08.775337 -04 [INFO] certificate has been successfully generated in ./certificates
+Logger Version: 1.6.1 SourceFile: mTLS.go Hash: VYIfGJvOzFNCG4E3CVwjHnTddYgfWDUCsBGkTnXBfsU=
+May 28, 2025 22:56:18.638908 -04 [INFO] Starting certificate generation
+May 28, 2025 22:56:18.830790 -04 [INFO] Written to ./certificates/ca/ca-cert.pem
+May 28, 2025 22:56:18.832148 -04 [INFO] Written to ./certificates/ca/ca-key.pem
+May 28, 2025 22:56:18.929674 -04 [INFO] Written to ./certificates/server/server-cert.pem
+May 28, 2025 22:56:18.930065 -04 [INFO] Written to ./certificates/server/server-key.pem
+May 28, 2025 22:56:18.977882 -04 [INFO] Written to ./certificates/client/client-cert.pem
+May 28, 2025 22:56:18.978750 -04 [INFO] Written to ./certificates/client/client-key.pem
+May 28, 2025 22:56:18.978811 -04 [INFO] certificate has been successfully generated in ./certificates
+Logger Version: 1.6.1 SourceFile: mTLS.go Hash: 7NKOUIF7O+1Khu3MwxoJPuE0iJ7/fduhBtbqDG8zPWI=
+Jun 1, 2025 19:50:55.436839 -04 [INFO] Starting certificate generation
+Jun 1, 2025 19:50:55.609808 -04 [INFO] Written to ./certificates/ca/ca-cert.pem
+Jun 1, 2025 19:50:55.610242 -04 [INFO] Written to ./certificates/ca/ca-key.pem
+Jun 1, 2025 19:50:55.677658 -04 [INFO] Written to ./certificates/server/server-cert.pem
+Jun 1, 2025 19:50:55.678178 -04 [INFO] Written to ./certificates/server/server-key.pem
+Jun 1, 2025 19:50:55.810684 -04 [INFO] Written to ./certificates/client/client-cert.pem
+Jun 1, 2025 19:50:55.835644 -04 [INFO] Written to ./certificates/client/client-key.pem
+Jun 1, 2025 19:50:55.835796 -04 [INFO] certificate has been successfully generated in ./certificates
+Logger Version: 1.6.1 SourceFile: mTLS.go Hash: 7NKOUIF7O+1Khu3MwxoJPuE0iJ7/fduhBtbqDG8zPWI=
+Jun 1, 2025 19:51:08.018555 -04 [INFO] Starting certificate generation
+Jun 1, 2025 19:51:08.234244 -04 [INFO] Written to ./certificates/ca/ca-cert.pem
+Jun 1, 2025 19:51:08.234683 -04 [INFO] Written to ./certificates/ca/ca-key.pem
+Jun 1, 2025 19:51:08.336013 -04 [INFO] Written to ./certificates/server/server-cert.pem
+Jun 1, 2025 19:51:08.336460 -04 [INFO] Written to ./certificates/server/server-key.pem
+Jun 1, 2025 19:51:08.486725 -04 [INFO] Written to ./certificates/client/client-cert.pem
+Jun 1, 2025 19:51:08.502316 -04 [INFO] Written to ./certificates/client/client-key.pem
+Jun 1, 2025 19:51:08.502451 -04 [INFO] certificate has been successfully generated in ./certificates
+Logger Version: 1.6.1 SourceFile: mTLS.go Hash: oBWtEB1mUyRSzgKFlYk0ivn8qs7RX1nNoRZfZTBHD8I=
+Jun 1, 2025 20:53:56.912525 -04 [INFO] Starting certificate generation
+Jun 1, 2025 20:53:57.019791 -04 [INFO] Written to ./certificates/ca/ca-cert.pem
+Jun 1, 2025 20:53:57.020245 -04 [INFO] Written to ./certificates/ca/ca-key.pem
+Jun 1, 2025 20:53:57.463353 -04 [INFO] Written to ./certificates/server/server-cert.pem
+Jun 1, 2025 20:53:57.463835 -04 [INFO] Written to ./certificates/server/server-key.pem
+Jun 1, 2025 20:53:57.519026 -04 [INFO] Written to ./certificates/client/client-cert.pem
+Jun 1, 2025 20:53:57.519504 -04 [INFO] Written to ./certificates/client/client-key.pem
+Jun 1, 2025 20:53:57.519550 -04 [INFO] certificate has been successfully generated in ./certificates
+Logger Version: 1.6.1 SourceFile: mTLS.go Hash: NLme6hV93sV+y3tpG5SWoZNZ/mXmYjXyTVOlSBCuybs=
+Jun 2, 2025 22:19:30.235158 -04 [INFO] Starting certificate generation
+Jun 2, 2025 22:19:30.254409 -04 [INFO] Using existing CA certificate
+Jun 2, 2025 22:19:30.342401 -04 [INFO] Written to ./certificates/server/server-cert.pem
+Jun 2, 2025 22:19:30.362343 -04 [INFO] Written to ./certificates/server/server-key.pem
+Jun 2, 2025 22:19:30.503128 -04 [INFO] Written to ./certificates/client/client-cert.pem
+Jun 2, 2025 22:19:30.545034 -04 [INFO] Written to ./certificates/client/client-key.pem
+Jun 2, 2025 22:19:30.545167 -04 [INFO] certificate has been successfully generated in ./certificates
+Logger Version: 1.6.1 SourceFile: mTLS.go Hash: NLme6hV93sV+y3tpG5SWoZNZ/mXmYjXyTVOlSBCuybs=
+Jun 2, 2025 22:19:51.569421 -04 [INFO] Starting certificate generation
+Jun 2, 2025 22:19:51.569795 -04 [INFO] No existing CA found or error loading CA: CA certificate not found
+Jun 2, 2025 22:19:51.569801 -04 [INFO] Generating new CA certificate
+Jun 2, 2025 22:19:51.908175 -04 [INFO] Written to ./certificates/ca/ca-cert.pem
+Jun 2, 2025 22:19:51.908886 -04 [INFO] Written to ./certificates/ca/ca-key.pem
+Jun 2, 2025 22:19:52.225414 -04 [INFO] Written to ./certificates/server/server-cert.pem
+Jun 2, 2025 22:19:52.226146 -04 [INFO] Written to ./certificates/server/server-key.pem
+Jun 2, 2025 22:19:52.337831 -04 [INFO] Written to ./certificates/client/client-cert.pem
+Jun 2, 2025 22:19:52.338676 -04 [INFO] Written to ./certificates/client/client-key.pem
+Jun 2, 2025 22:19:52.338771 -04 [INFO] certificate has been successfully generated in ./certificates
+Logger Version: 1.6.1 SourceFile: mTLS.go Hash: NLme6hV93sV+y3tpG5SWoZNZ/mXmYjXyTVOlSBCuybs=
+Jun 2, 2025 22:20:08.016105 -04 [INFO] Starting certificate generation
+Jun 2, 2025 22:20:08.016945 -04 [INFO] Using existing CA certificate
+Jun 2, 2025 22:20:08.241208 -04 [INFO] Written to ./certificates/server/server-cert.pem
+Jun 2, 2025 22:20:08.241920 -04 [INFO] Written to ./certificates/server/server-key.pem
+Jun 2, 2025 22:20:08.666146 -04 [INFO] Written to ./certificates/client/client-cert.pem
+Jun 2, 2025 22:20:08.666503 -04 [INFO] Written to ./certificates/client/client-key.pem
+Jun 2, 2025 22:20:08.666540 -04 [INFO] certificate has been successfully generated in ./certificates

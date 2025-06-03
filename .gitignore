@@ -1,5 +1,6 @@
 certificates/
 *.exe
 *.out
+*.log
 .DS_Store
 .idea

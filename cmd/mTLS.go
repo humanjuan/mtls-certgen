@@ -25,9 +25,9 @@ var (
 	CERTIFICATE_EXPIRATION_DAYS = 365
 	CA_CN                       = "HumanJuan Root CA"
 	SERVER_CN                   = "Golyn Server"
-	CLIENT_CN                   = "Example Client"
+	CLIENT_CN                   = "Portal HumanJuan Client"
 	HOST_IPS                    = []string{"127.0.0.1"}
-	DNS_NAMES                   = []string{"humanjuan.local", "golyn.humanjuan.local", "humanjuan.com", "golyn.humanjuan.com"}
+	DNS_NAMES                   = []string{"portal.humanjuan.local"}
 	LOG_NAME                    = "certificates.log"
 	LOG_PATH                    = "./logs"
 	LOG_LEVEL                   = logger.Level.DEBUG
@@ -68,10 +68,18 @@ func main() {
 
 	ips := append(HOST_IPS, generateIPs("192.168.100.", 2, 254)...)
 
-	caCert, caKey, err := generateCACert()
+	// Using existing CA
+	caCert, caKey, err := loadExistingCA()
 	if err != nil {
-		log.Error("Error generating CA: %v", err)
-		return
+		log.Info("No existing CA found or error loading CA: %v", err)
+		log.Info("Generating new CA certificate")
+		caCert, caKey, err = generateCACert()
+		if err != nil {
+			log.Error("Error generating CA: %v", err)
+			return
+		}
+	} else {
+		log.Info("Using existing CA certificate")
 	}
 
 	// SERVER
@@ -232,6 +240,46 @@ func saveCertAndKey(name string, derBytes []byte, priv *rsa.PrivateKey) error {
 	}
 
 	return nil
+}
+
+func loadExistingCA() (*x509.Certificate, *rsa.PrivateKey, error) {
+	certPath := filepath.Join(CERTIFICATE_DIR, "ca", "ca-cert.pem")
+	keyPath := filepath.Join(CERTIFICATE_DIR, "ca", "ca-key.pem")
+
+	if _, err := os.Stat(certPath); os.IsNotExist(err) {
+		return nil, nil, fmt.Errorf("CA certificate not found")
+	}
+	if _, err := os.Stat(keyPath); os.IsNotExist(err) {
+		return nil, nil, fmt.Errorf("CA private key not found")
+	}
+
+	certPEM, err := os.ReadFile(certPath)
+	if err != nil {
+		return nil, nil, fmt.Errorf("error reading CA certificate: %v", err)
+	}
+	block, _ := pem.Decode(certPEM)
+	if block == nil {
+		return nil, nil, fmt.Errorf("failed to parse CA certificate PEM")
+	}
+	cert, err := x509.ParseCertificate(block.Bytes)
+	if err != nil {
+		return nil, nil, fmt.Errorf("failed to parse CA certificate: %v", err)
+	}
+
+	keyPEM, err := os.ReadFile(keyPath)
+	if err != nil {
+		return nil, nil, fmt.Errorf("error reading CA private key: %v", err)
+	}
+	block, _ = pem.Decode(keyPEM)
+	if block == nil {
+		return nil, nil, fmt.Errorf("failed to parse CA private key PEM")
+	}
+	key, err := x509.ParsePKCS1PrivateKey(block.Bytes)
+	if err != nil {
+		return nil, nil, fmt.Errorf("failed to parse CA private key: %v", err)
+	}
+
+	return cert, key, nil
 }
 
 func generateIPs(base string, start, end int) []string {

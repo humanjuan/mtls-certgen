@@ -4,3 +4,4 @@ certificates/
 *.log
 .DS_Store
 .idea
+/logs/

@@ -61,7 +61,7 @@ You can also add more IPs dynamically using the `generateIPs` function.
 
 - Local development with HTTPS servers that require mutual authentication.
 - Testing services that implement **mTLS** like Grafana, Prometheus, Nginx, etc.
-- Projects with custom servers like [Golyn](https://github.com/jpengineer/golyn) or other APIs.
+- Projects with custom servers like [Golyn](https://github.com/humanjuan/golyn) or other APIs.
 
 ---
 

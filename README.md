@@ -1,3 +1,5 @@
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-Support-orange?logo=buy-me-a-coffee&style=flat-square)](https://www.buymeacoffee.com/humanjuan)
+
 # mTLS Certificate Generator
 
 This project is a simple tool written in Go that helps you generate self-signed mTLS (Mutual TLS) certificates. It’s designed for local development and testing, making it easy to set up your own certificate authority (CA) along with server and client certificates, perfect for testing secure connections without relying on external certificate providers.
